@@ -1,0 +1,30 @@
+{
+    "manifest_version": 3,
+    "name": "Theo Twitter Icon",
+    "version": "1.0.0",
+    "description": "Twitter but Theo. Built by Jonte with TypeScript",
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "run_at": "document_end",
+            "matches": [
+                "*://twitter.com/*"
+            ],
+            "js": [
+                "inject.js"
+            ]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "matches": [
+                "*://twitter.com/*"
+            ],
+            "resources": [
+                "img/*"
+            ]
+        }
+    ]
+}
