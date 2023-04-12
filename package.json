@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "cp -r public/* dist/; tsc --watch",
-    "build": "cp -r public/* dist/; tsc"
+    "build": "mkdir -p dist/; cp -r public/* dist/; tsc"
   },
   "keywords": [],
   "author": "Jontes-Tech",

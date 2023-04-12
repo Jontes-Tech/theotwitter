@@ -1,4 +1,4 @@
-const amount = 6
+const amount = 8
 const random = Math.floor(Math.random() * amount)
 
 // We listen to the DOM for changes, and when we detect a change, we check if the header is present.
